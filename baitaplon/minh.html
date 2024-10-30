@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+			 width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 100%;
+            width: 100%;
+            padding: 0 10px;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .logo a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .logo span {
+            display: block;
+            font-size: 12px;
+            color: #888;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li {
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            padding: 5px 0;
+        }
+
+        .navbar ul li a:hover {
+            border-bottom: 2px solid #000;
+        }
+
+        .navbar ul li a::after {
+            content: '▼';
+            font-size: 10px;
+            margin-left: 5px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icons a {
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .cart-count {
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 12px;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f1eb;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #f4f1eb;
+        }
+
+        /* Left Content */
+        .content {
+            max-width: 50%;
+        }
+
+        .content h2 {
+            font-size: 18px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .content h1 {
+            font-size: 48px;
+			color: #000;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .content .awards {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .award {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .award img {
+            max-width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+     
+        .illustrations {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            grid-gap: 20px; /* Gap between images */
+            max-width: 45%;
+        }
+
+        .illustrations img {
+            width: 50%;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 1768px) {
+            .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .content, .illustrations {
+                max-width: 100%;
+            }
+
+            .content h1 {
+                font-size: 36px;
+            }
+
+            .illustrations {
+                grid-template-columns: 1fr; /* Single column on mobile */
+            }
+        }
+		* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+span {
+    font-size: 0.9rem;
+    color: #777;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 10px;
+    padding: 20px;
+    flex: 0 0 250px;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.info-btn, .learn-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.info-btn {
+    background-color: #f0f0f0;
+}
+
+.learn-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.learn-btn:hover {
+    background-color: #218838;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.logo h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.footer-links {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.middle-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+.social-media li {
+    display: inline-block;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+}
+
+.right-section {
+    flex: 1;
+    text-align: right;
+}
+
+.ratings {
+    margin-bottom: 15px;
+}
+
+.ratings p {
+    margin-bottom: 5px;
+}
+
+.app-links a img {
+    width: 120px;
+    margin-left: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+.footer-bottom-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-bottom-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-bottom-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+.footer-icons {
+		margin-top: 20px;
+		}
+
+		.footer-icons a {
+		margin-right: 15px;
+		font-size: 20px;
+		border: 1px solid white;
+		border-radius: 10%;
+		padding: 10px;
+		transition: background-color 0.3;
+		}
+		* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    flex: 0 0 250px; 
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.info-btn, .learn-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.info-btn {
+    background-color: #f0f0f0;
+}
+
+.learn-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.learn-btn:hover {
+    background-color: #218838;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10;
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px; 
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+	<div class="container">
+            <div class="menu-icon">
+                &#9776; <!-- Hamburger Icon -->
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Homes</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pages</a></li>
+					 </ul>
+            </nav>
+			<div class="logo">
+                <a href="#">AUTEUR</a>
+                <span>Author & Writer</span>
+            </div>
+			<nav class="navbar">
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Event</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="#"><i class="search-icon">🔍</i></a>
+                <a href="#"><i class="cart-icon">🛒</i><span class="cart-count">99+</span></a>
+                <a href="#"><i class="user-icon">👤</i></a>
+            </div>
+        </div>
+    </header>
+	<div class="container">
+        <!-- Left side content -->
+        <div class="content">
+            <h2>FOR AUTHOR & WRITE</h2>
+            <h1>Meet Your Next Online course</h1>
+            <div class="awards">
+                <div class="award">
+                    <img src="D:\23cdti_thietkewed\anh\logo2.png" alt="Award 1">
+                    <p>USA Best Book Awards Winner</p>
+                </div>
+                <div class="award">
+                    <img src="D:\23cdti_thietkewed\anh\logo3.jpg" alt="Award 2">
+                    <p>#1 Best Seller</p>
+                </div>
+                <div class="award">
+                    <img src="D:\23cdti_thietkewed\anh\logo4.jpg" alt="Award 3">
+                    <p>Book Shimmy Awards</p>
+                </div>
+            </div>
+            <button class="button">Purchase</button>
+        </div>
+
+        <!-- Right side illustrations -->
+        <div class="illustrations">
+            <img src="D:\23cdti_thietkewed\anh\3.jpg" alt="Person with laptop on bench">
+            <img src="D:\23cdti_thietkewed\anh\3.jpg" alt="Person looking through telescope">
+            <img src="D:\23cdti_thietkewed\anh\3.jpg" alt="Person with laptop on bench">
+            <img src="D:\23cdti_thietkewed\anh\3.jpg" alt="Person looking through telescope">
+        </div>
+    </div>
+	<div class="header">
+        <img src="D:\23cdti_thietkewed\anh\logo1.jpg" alt="Logo" class="logo">
+        <h1>Welcome to Auteur</h1>
+    </div>
+    <div class="course-grid">
+        <a href="#" class="course-card">
+            <div class="icon">🌩</div>
+            <p>IT</p>
+            <span>1,160 Courses</span>
+        </a>
+        <a href="#" class="course-card">
+            <div class="icon">🩺</div>
+            <p>Health</p>
+            <span>935 Courses</span>
+        </a>
+        <a href="#" class="course-card">
+            <div class="icon">🌍</div>
+            <p>Language</p>
+			<span>310 Courses</span>
+        </a>
+        <a href="#" class="course-card">
+            <div class="icon">📈</div>
+            <p>Business</p>
+            <span>1,604 Courses</span>
+        </a>
+        <a href="#" class="course-card">
+            <div class="icon">📊</div>
+            <p>Management</p>
+            <span>956 Courses</span>
+        </a>
+        <a href="#" class="course-card">
+            <div class="icon">📚</div>
+            <p>English</p>
+            <span>55 Courses</span>
+        </a>
+        <a href="#" class="course-card">
+            <div class="icon">🚀</div>
+            <p>Personal Development</p>
+            <span>1,241 Courses</span>
+        </a>
+        <a href="#" class="course-card">
+            <div class="icon">📢</div>
+            <p>Sales & Marketing</p>
+            <span>413 Courses</span>
+        </a>
+        <a href="#" class="course-card">
+            <div class="icon">🏗</div>
+            <p>Engineering & Construction</p>
+            <span>780 Courses</span>
+        </a>
+        <a href="#" class="course-card">
+            <div class="icon">🎓</div>
+            <p>Teaching & Academics</p>
+            <span>1,504 Courses</span>
+        </a>
+    </div>
+	<div class="carousel-container">
+        <button class="carousel-btn prev-btn" onclick="prevSlide()">&#9664;</button>
+        <div class="carousel">
+            <div class="card">
+                <img src="D:\23cdti_thietkewed\anh\sach2.jpg" alt="Course Image">
+                <h3>Health</h3>
+                <p>Caregiving Skills - Dementia Care</p>
+                <div class="info">
+                    <span>⏰ 2 - 3 hrs</span>
+                    <span>👥 291,138 learners</span>
+                </div>
+                <button class="info-btn">More Info</button>
+                <button class="learn-btn">Start Learning</button>
+            </div>
+
+            <div class="card">
+                <img src="D:\23cdti_thietkewed\anh\sach3.jpg" alt="Course Image">
+                <h3>Business</h3>
+                <p>HACCP Food Safety System</p>
+                <div class="info">
+                    <span>⏰ 3 - 4 hrs</span>
+                    <span>👥 67,085 learners</span>
+                </div>
+                <button class="info-btn">More Info</button>
+                <button class="learn-btn">Start Learning</button>
+            </div>
+
+            <div class="card">
+                <img src= "D:\23cdti_thietkewed\anh\sach7.jpg" alt="Course Image">
+                <h3>Business</h3>
+                <p>Fundamentals of HIPAA Law</p>
+                <div class="info">
+                    <span>⏰ 2 - 3 hrs</span>
+                    <span>👥 3,190 learners</span>
+                </div>
+                <button class="info-btn">More Info</button>
+                <button class="learn-btn">Start Learning</button>
+            </div>
+
+            <div class="card">
+                <img src="D:\23cdti_thietkewed\anh\sach6.jpg" alt="Course Image">
+				<h3>Education</h3>
+                <p>Safeguarding Children</p>
+                <div class="info">
+                    <span>⏰ 2 - 3 hrs</span>
+                    <span>👥 26,665 learners</span>
+                </div>
+                <button class="info-btn">More Info</button>
+                <button class="learn-btn">Start Learning</button>
+            </div>
+        </div>
+        <button class="carousel-btn next-btn" onclick="nextSlide()">&#9654;</button>
+    </div>
+
+    <script src="carousel.js"></script>
+	<footer>
+        <div class="footer-container">
+            <div class="left-section">
+                <div class="logo">
+                    <h2>Alison</h2>
+                    <p>Empower Yourself</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                </ul>
+            </div>
+
+            <div class="middle-section">
+                <ul class="social-media">
+                    <li><a href="#"><img src= "D:\23cdti_thietkewed\anh\fb.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="D:\23cdti_thietkewed\anh\sp.png" alt="Shopee"></a></li>
+                    <li><a href="#"><img src="D:\23cdti_thietkewed\anh\in.png" alt="LinkedIn"></a></li>
+                    <li><a href="#"><img src="D:\23cdti_thietkewed\anh\ins.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="D:\23cdti_thietkewed\anh\tt.png" alt="TikTok"></a></li>
+                    <li><a href="#"><img src="D:\23cdti_thietkewed\anh\yt.png" alt="YouTube"></a></li>
+                    <li><a href="#"><img src="D:\23cdti_thietkewed\anh\qr.png" alt="Quora"></a></li>
+                    <li><a href="#"><img src="D:\23cdti_thietkewed\anh\tl.png" alt="Zalo"></a></li>
+                </ul>
+            </div>
+			
+            <div class="right-section">
+                <div class="app-links">
+                    <a href="#"><img src="D:\23cdti_thietkewed\anh\app.jpg" alt="App Store"></a>
+                    <a href="#"><img src="D:\23cdti_thietkewed\anh\ch.png" alt="Google Play"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© Alison 2024</p>
+            <ul class="footer-bottom-links">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
